@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">UD-BDay-Udacity</string>
+    <string name="title">Happy Birthday</string>
+    <string name="firstname">manon</string>
+    <string name="age">7</string>
+    <string name="text_button">Get your present</string>
+</resources>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Parent Layout With Vertical Orientation -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/primaryColor"
+    tools:context="com.example.android.ud_bday_udacity.MainActivity">
+    <!-- 1st Child Layout -->
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:background="@color/mainBkgColor"
+        >
+        <ImageView
+            android:id="@+id/bkg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/birthday"
+            android:scaleType="centerCrop"
+            android:alpha=".4"/>
+        <TextView
+            android:id="@+id/title"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title"
+            android:fontFamily="@font/quicksand_medium"
+            android:textSize="45sp"
+            android:textColor="@color/primaryColor"
+            android:textAlignment="center"
+            />
+        <TextView
+            android:id="@+id/firstname"
+            android:layout_above="@id/separator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="@string/firstname"
+            android:fontFamily="@font/quicksand_bold"
+            android:textSize="60sp"
+            android:textColor="@color/primaryColor"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            />
+        <View
+            android:id="@+id/separator"
+            android:layout_centerInParent="true"
+            android:layout_width="150dp"
+            android:layout_height="2dp"
+            android:background="@color/primaryColor" />
+        <TextView
+            android:id="@+id/age"
+            android:layout_below="@id/separator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="@string/age"
+            android:textSize="100sp"
+            android:textColor="@color/primaryColor"
+            android:textAlignment="center"/>
+    </RelativeLayout>
+    <!-- 2nd Child Layout -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="@color/secondaryBkgColor"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/icon_height"
+            android:layout_weight="1"
+            android:src="@drawable/ic_tag_faces_black_24dp"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/icon_height"
+            android:layout_weight="1"
+            android:src="@drawable/ic_add_black_24dp"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/icon_height"
+            android:layout_weight="1"
+            android:src="@drawable/ic_card_giftcard_black_24dp"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/icon_height"
+            android:layout_weight="1"
+            android:src="@drawable/ic_keyboard_arrow_right_black_24dp"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/icon_height"
+            android:layout_weight="1"
+            android:src="@drawable/ic_music_note_black_24dp"/>
+    </LinearLayout>
+    <!-- 3rd Child Layout -->
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:padding="16dp"
+            android:background="@color/btnColor"
+            android:text="@string/text_button"
+            android:fontFamily="@font/quicksand_medium"
+            android:textSize="16sp"
+            android:textColor="@color/primaryColor"
+            android:textAllCaps="true" />
+    </RelativeLayout>
+</LinearLayout>
